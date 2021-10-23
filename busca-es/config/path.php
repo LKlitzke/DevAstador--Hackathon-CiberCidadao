@@ -8,6 +8,7 @@ if ($_SERVER['HTTP_HOST'] == "127.0.0.1"){
 	define("PATH_INCLUDES", '/busca-es/includes');
 	define("PATH_JS", '/busca-es/js');
 	define("PATH_PAGINAS", '/busca-es/paginas');
+	define("PATH_PUBLIC", '/busca-es/public');
 }else{
 	// Ambiente online
 	define("PATH", '/');
@@ -16,6 +17,7 @@ if ($_SERVER['HTTP_HOST'] == "127.0.0.1"){
 	define("PATH_INCLUDES", '/includes');
 	define("PATH_JS", '/js');
 	define("PATH_PAGINAS", '/paginas');
+	define("PATH_PUBLIC", '/public');
 }
 
 ?>

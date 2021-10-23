@@ -42,6 +42,9 @@ if(empty($secao)){
         $sufixo = "";
     }
 
+    // Trocar hifen/espaço por underline
+    $secao = str_replace('-', '_', str_replace(' ', '_', $secao));
+
     $existe_template = file_exists("paginas/" . $secao . "/" . $secao.$sufixo.".php");
     if(!$existe_template) {
         header("Location: " . PATH . "/erro.php");

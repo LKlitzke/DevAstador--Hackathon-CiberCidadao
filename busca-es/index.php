@@ -8,6 +8,9 @@ include_once('classes/database.class.php');
 
 include_once('config/path.php');
 
+// inicia sessão do usuário
+session_start();
+
 if ($_SERVER['HTTP_HOST'] == "127.0.0.1"){
     // Ambiente de testes
     $url_amigavel = new URL('busca-es');
@@ -26,11 +29,6 @@ $mysqli->set_charset("utf8mb4");
 $secao = $_GET['secao'];
 $id = $_GET['id'];
 $titulo = $_GET['titulo'];
-
-// echo "secao: " . $secao  . "<br/>";
-// echo "id: " . $id  . "<br/>";
-// echo "titulo: " . $titulo . "<br/>";
-// exit;
 
 if(empty($secao)){
     $secao = 'home';

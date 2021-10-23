@@ -3,17 +3,16 @@
 $sql = "
 	SELECT 
 		id,
-		nome_setor,
-		nome_label,
+		nome,
 		conteudo,
 		DATE_FORMAT(data_cadastro, '%d/%m/%Y') AS data_cadastro,
 		DATE_FORMAT(data_atualizacao, '%d/%m/%Y') AS data_atualizacao
 	FROM 
-		setores 
+		documentos_requisitos
 	WHERE 
-		nome_setor <> ''
+		nome <> ''
 	ORDER BY
-		nome_setor ASC
+		nome ASC
 ";
 
 $registros = array();
@@ -23,6 +22,6 @@ if ($result = $mysqli->query($sql)) {
     }
 }
 
-include_once("home.tpl.php");
+include_once("documentos.tpl.php");
 
 ?>

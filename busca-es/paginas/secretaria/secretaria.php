@@ -4,7 +4,6 @@ $sql = "
 	SELECT 
 		id,
 		nome_setor,
-		nome_label,
 		conteudo,
 		DATE_FORMAT(data_cadastro, '%d/%m/%Y') AS data_cadastro,
 		DATE_FORMAT(data_atualizacao, '%d/%m/%Y') AS data_atualizacao
@@ -23,6 +22,6 @@ if ($result = $mysqli->query($sql)) {
     }
 }
 
-include_once("home.tpl.php");
+include_once("secretaria.tpl.php");
 
 ?>

@@ -7,7 +7,6 @@ class database{
     public $pass = "";
     public $dbname = "busca_es";
     public $port = 3308;
-    public $connect;
     
     public function connect() {
         try{

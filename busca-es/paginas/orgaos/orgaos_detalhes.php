@@ -7,7 +7,10 @@ $sql = "
 		logo,
 		conteudo,
 		DATE_FORMAT(data_cadastro, '%d/%m/%Y') AS data_cadastro,
-		DATE_FORMAT(data_atualizacao, '%d/%m/%Y') AS data_atualizacao
+		DATE_FORMAT(data_atualizacao, '%d/%m/%Y') AS data_atualizacao,
+		info1,
+		info2,
+		link
 	FROM 
 		orgaos
 	WHERE 

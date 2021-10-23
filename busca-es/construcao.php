@@ -19,9 +19,9 @@
     </head>
     <body>
         <div>
-            <img src="<?php echo PATH_PUBLIC; ?>/img/erro/Oops.png">
+            <img src="<?php echo PATH_PUBLIC; ?>/img/construcao.svg" width="40%" height="40%">
             <hr>
-            <h4>A página procurada está indisponível ou não existe! <br> Tente novamente mais tarde ou altere a busca.</h4>
+            <h4>Esta página não existe pois o nosso protótipo possui um tamanho limitado! :)</h4>
         
             <br><a href="<?php echo PATH; ?>" class="btn btn-primary" role="button" aria-pressed="true"><i class="fa fa-home"></i>&nbsp; <b>Voltar ao Home</b></a>
         </div>        

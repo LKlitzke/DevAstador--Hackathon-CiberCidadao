@@ -8,7 +8,7 @@ $sql = "
 		DATE_FORMAT(data_cadastro, '%d/%m/%Y') AS data_cadastro,
 		DATE_FORMAT(data_atualizacao, '%d/%m/%Y') AS data_atualizacao
 	FROM 
-		orgaos 
+		empresas_publicas 
 	WHERE 
 		nome <> ''
 	ORDER BY
@@ -22,6 +22,6 @@ if ($result = $mysqli->query($sql)) {
     }
 }
 
-include_once("orgaos.tpl.php");
+include_once("empresas_publicas.tpl.php");
 
 ?>

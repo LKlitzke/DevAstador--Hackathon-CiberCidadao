@@ -3,7 +3,7 @@
 		<div class="row">
 			<?php foreach ($registros as $row) { ?>
 				<div class="col-md-4">
-					<a href="<?php echo PATH; ?>/orgaos/<?php echo $row['id']; ?>/<?php echo urlencode($row['nome']); ?>">
+					<a href="<?php echo PATH; ?>/empresas_publicas/<?php echo $row['id']; ?>/<?php echo urlencode($row['nome']); ?>">
 						<h5 class="card-title"><?php echo $row['nome']; ?></h5>
 					</a>
 				</div>

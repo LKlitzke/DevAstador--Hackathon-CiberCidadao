@@ -1,6 +1,6 @@
 <?php 
 
-// ini_set('display_errors', true);
+//ini_set('display_errors', true);
 ini_set('display_errors', false);
 
 include_once('classes/url.class.php');
@@ -46,8 +46,13 @@ if(empty($secao)){
     $secao = str_replace('-', '_', str_replace(' ', '_', $secao));
 
     $existe_template = file_exists("paginas/" . $secao . "/" . $secao.$sufixo.".php");
+    //echo "paginas/" . $secao . "/" . $secao.$sufixo.".php";
+
     if(!$existe_template) {
         header("Location: " . PATH . "/erro.php");
+    }
+    if(in_array($secao,array('secretaria','autarquia','informacoes_gerais'))){
+        header("Location: " . PATH . "/construcao.php");
     }
 }
 
